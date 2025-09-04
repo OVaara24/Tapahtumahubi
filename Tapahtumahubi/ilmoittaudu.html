@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tapahtumahubi ilmoittautuminen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tapahtumaan ilmoittautuminen</h1>
+        <nav>
+            <a href="index.html">Kotisivu</a>
+            <a href="tapahtumat.html">Tapahtumat</a>
+            <a href="ilmoittaudu.html">Ilmoittaudu</a>
+            <a href="galleria.html">Galleria</a>
+            <a href="yhteystiedot.html">Yhteystiedot</a>
+        </nav>
+    </header>
+    <main>
+      <form action="action_page.php" method="POST">
+        <label for="nimi">Etunimi ja Sukunimi:</label><br>
+        <input type="text" id="nimi" name="nimi"><br>
+
+        <label for="email">Sähköposti:</label><br>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="tapahtuma">Valitse tapahtuma:</label><br>
+        <select id="tapahtuma" name="tapahtuma">
+            <option value="Käsityömarkkinat">Käsityömarkkinat</option>
+            <option value="Teatterin kirpputori">Teatterin kirpputori</option>
+            <option value="Tutustu Oulun yliopistoon kierros">Tutustu Oulun yliopistoon kierros</option>
+            <option value="Ilmakitaran maailmanmestaruus kilpailu">Ilmakitaran maailmanmestaruus kilpailu</option>
+        </select><br>
+
+        <label for="viesti">Viesti järjestäjälle:</label><br>
+        <textarea name="viesti" rows="10" cols="30">
+        </textarea><br>
+
+        <input type="submit" value="Ilmoittaudu">
+      </form>
+    </main>
+
+</body>
+</html>
